@@ -41,10 +41,6 @@ main {
   box-shadow: 0px 10px 20px hsl(224, 65%, 95%);
 }
 
-input {
-  height: 40px;
-}
-
 h2 {
   letter-spacing: 0.1rem;
   padding-top: 40px;
@@ -68,12 +64,12 @@ h2 {
   color: hsl(15, 100%, 70%);
   background-color: hsl(14, 92%, 95%);
   border-radius: 35px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding: 4px 8px;
   margin-left: 5px;
 }
 
-input[type="checkbox"] {
+#switch[type="checkbox"] {
   height: 0;
   width: 0;
   visibility: hidden;
@@ -102,11 +98,11 @@ input[type="checkbox"] {
   transition: 0.3s;
 }
 
-input:checked + #check {
+#switch:checked + #check {
   background: hsl(174, 86%, 45%);
 }
 
-input:checked + #check:after {
+#switch:checked + #check:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }
@@ -148,17 +144,27 @@ button:hover {
 #discountText {
   display: none;
 }
+
+#slider {
+  margin-top: 20px;
+}
+
+/* MEDIA QUERYs _*_*_*_*_*_*_*_*_ */
+
 @media (min-width: 700px) {
   main {
     max-width: 700px;
   }
   #discountText {
-    display: block;
+    display: inline;
     margin-left: 10px;
   }
 
   #discountPercent {
     padding: 4px 8px;
     margin-left: 5px;
+  }
+  .box2 {
+    padding-left: 70px;
   }
 }
