@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="resetStyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>InteractivePricingComponent</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial.</p>
+      <p>No credit card required.</p>
+    </nav>
+    <main>
+      <h2><span id="viewsN">100K</span> PAGEVIEWS</h2>
+      <div id="slider">
+        <input type="range" id="rangeViews" name="rangeViews" min="0" max="100" value="50" step="25" /><label for="rangeViews"></label>
+      </div>
+      <div class="box">
+        <h3 id="amount">$16.00</h3>
+        <h3>/month</h3>
+      </div>
+      <div class="box">
+        Monthly Billing <input type="checkbox" id="switch" /><label id="check" for="switch"></label> Yearly Billing
+        <span id="discountPercent"> 25%<span id="discountText">discount</span></span>
+      </div>
+      <div class="perks">
+        <ul>
+          <li><img src="images/icon-check.svg" alt="icon-check" /> Unlimited websites</li>
+          <li><img src="images/icon-check.svg" alt="icon-check" /> 100% data ownership</li>
+          <li><img src="images/icon-check.svg" alt="icon-check" /> Email reports</li>
+        </ul>
+      </div>
+      <button>Start my trial</button>
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://github.com/Olundir" target="_blank">Krzysztof Jeżak</a>.
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
